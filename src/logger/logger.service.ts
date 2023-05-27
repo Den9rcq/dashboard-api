@@ -1,6 +1,10 @@
+import { injectable } from 'inversify'
 import { Logger, ILogObj } from 'tslog'
+import { ILogger } from "./logger.inteface";
+import 'reflect-metadata';
 
-export class LoggerService {
+@injectable()
+export class LoggerService implements ILogger {
   public logger: Logger<ILogObj>
 
   constructor() {
