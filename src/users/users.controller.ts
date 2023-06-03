@@ -6,7 +6,7 @@ import { TYPES } from '../types';
 import { ILogger } from '../logger/logger.inteface';
 import 'reflect-metadata';
 import { IUserController } from './users.controller.interface';
-import { UserLoginDto } from './dto/user.login.dto';
+import { UserLoginDto } from './dto/user-login.dto';
 import { UserRegisterDto } from './dto/user-register.dto';
 import { UsersService } from './users.service';
 import { ValidateMiddleware } from '../common/validate.middleware';
